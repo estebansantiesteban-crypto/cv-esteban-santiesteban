@@ -192,3 +192,69 @@ tr:nth-child(even) {
 .tarjeta-habilidad ul {
     padding-left: 20px;
 }
+form fieldset {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+form button[type="reset"] {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+dialog {
+    padding: 15px;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
