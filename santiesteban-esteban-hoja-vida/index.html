@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Esteban Javier Santiesteban Flores</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/imagenFoto.png" alt="Fotografía de Esteban Santiesteban" class="foto-perfil">
+        <h1>Esteban Javier Santiesteban Flores</h1>
+        <p class="subtitulo">Estudiante de Ingeniería de Sistemas | Deportista UCB</p>
+        
+        <p class="datos-contacto">
+            📍 La Paz, Bolivia | 
+            📧 <a href="mailto:estebansjf19@gmail.com">estebansjf19@gmail.com</a> | 
+            📱 <a href="tel:+59161219052">+591 61219052</a>
+        </p>
+
+        <a href="assets/CV_Esteban_Santiesteban.pdf" download="CV_Esteban_Santiesteban.pdf" class="btn-download">
+            Descargar CV en PDF
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto-form">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="perfil">
+            <h2>Perfil Profesional</h2>
+            <p>
+                Hola, soy <strong>Esteban Santiesteban</strong>, tengo 19 años y estudio Ingeniería de Sistemas en la 
+                <abbr title="Universidad Católica Boliviana">UCB</abbr> en La Paz, Bolivia.
+            </p>
+            <p>
+                Me gusta la programación, el desarrollo de páginas web y formo parte de la selección de <mark>básquetbol</mark> de mi universidad.
+            </p>
+
+            <h3>Mi Progreso Académico</h3>
+            <p>
+                Carrera (3.er Semestre): 
+                <progress value="35" max="100">35%</progress>
+            </p>
+            <p>
+                Rendimiento General: 
+                <meter value="88" min="0" max="100">88%</meter>
+            </p>
+
+            <h3>Audio de Presentación</h3>
+            <audio controls>
+                <source src="assets/audio/presentacion.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            <article>
+                <h3>Ingeniería de Sistemas</h3>
+                <p><strong>Universidad Católica Boliviana "San Pablo"</strong></p>
+                <p>Febrero 2024 – Presente</p>
+            </article>
+
+            <article>
+                <h3>Bachiller en Humanidades</h3>
+                <p>Graduado en 2023</p>
+            </article>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Realizados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Nombre del Proyecto</th>
+                        <th>Tecnología</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026</td>
+                        <td>Página Web Inicial</td>
+                        <td>HTML5 & CSS3</td>
+                    </tr>
+                    <tr>
+                        <td>2026</td>
+                        <td>Sistema de Gestión Escolar</td>
+                        <td>C++</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades e Idiomas</h2>
+            <details open>
+                <summary>Ver detalle de competencias</summary>
+                
+                <!-- Estructura optimizada para CSS Grid -->
+                <div class="grid-habilidades">
+                    <article class="tarjeta-grid">
+                        <h3>Habilidades Técnicas</h3>
+                        <ul>
+                            <li>Maquetación en HTML5</li>
+                            <li>Programación básica en C++</li>
+                            <li>Control de versiones con Git</li>
+                        </ul>
+                    </article>
+
+                    <article class="tarjeta-grid">
+                        <h3>Habilidades Profesionales</h3>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Disciplina deportiva</li>
+                            <li>Resolución de problemas</li>
+                        </ul>
+                    </article>
+
+                    <article class="tarjeta-grid">
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li><strong>Español:</strong> Nativo</li>
+                            <li><strong>Inglés:</strong> Intermedio</li>
+                        </ul>
+                    </article>
+                </div>
+            </details>
+        </section>
+
+        <section id="contacto-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Escríbeme un mensaje</legend>
+
+                    <p>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                    </p>
+
+                    <p>
+                        <label for="motivo">Motivo:</label>
+                        <select id="motivo" name="motivo">
+                            <option value="estudios">Consulta Académica</option>
+                            <option value="trabajo">Propuesta de Proyecto</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
+                    </p>
+
+                    <p class="contenedor-botones">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar Formulario</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="aviso">
+            <h2>Aviso</h2>
+            <dialog open>
+                <p>¡Bienvenido a mi primera Hoja de Vida creada en HTML5 y CSS3!</p>
+            </dialog>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto Directo</h2>
+            <address>
+                <strong>Esteban Javier Santiesteban Flores</strong><br>
+                La Paz, Bolivia<br>
+                Correo: <a href="mailto:estebansjf19@gmail.com">estebansjf19@gmail.com</a><br>
+                Teléfono: <a href="tel:+59161219052">+591 61219052</a>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 Esteban Javier Santiesteban Flores - Todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
+</html>
