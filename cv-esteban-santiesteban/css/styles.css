@@ -115,3 +115,31 @@ nav a:hover {
     background-color: var(--primary-color);
     color: #ffffff;
 }
+main section {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+
+article {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+article:last-of-type {
+    border-bottom: none;
+}
+
+article h3 {
+    color: var(--accent-color);
+}   
