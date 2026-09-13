@@ -143,3 +143,8 @@ article:last-of-type {
 article h3 {
     color: var(--accent-color);
 }   
+progress, meter {
+    width: 100%;
+    height: 18px;
+    margin-top: 5px;
+}
